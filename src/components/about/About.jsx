@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <section id="about" className="about-section">
-      <div className="about-container">
+      <div className="about-container" data-aos="fade-up">
         {/* Left Image */}
         <div className="about-image">
           <img src="/Image/profile.jpg" alt="About Me" />

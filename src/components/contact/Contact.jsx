@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         {/* Left Content */}
-        <div className="contact-info">
+        <div className="contact-info" data-aos="fade-right">
           <p className="contact-tag">CONTACT</p>
 
           <h1 className="contact-title">
@@ -24,12 +24,12 @@ const Contact = () => {
           <div className="contact-cards">
             <div className="contact-card">
               <h3>Email</h3>
-              <p>chanthy@example.com</p>
+              <p>chanthykk66@gmail.com</p>
             </div>
 
             <div className="contact-card">
               <h3>Phone</h3>
-              <p>+855 12 345 678</p>
+              <p>+855 96 790 2778</p>
             </div>
 
             <div className="contact-card">
@@ -40,7 +40,7 @@ const Contact = () => {
         </div>
 
         {/* Right Form */}
-        <div className="contact-form-container">
+        <div className="contact-form-container" data-aos="fade-left">
           <form className="contact-form">
             <div className="input-group">
               <input type="text" placeholder="Your Name" required />

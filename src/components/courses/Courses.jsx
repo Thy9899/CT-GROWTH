@@ -5,7 +5,7 @@ const Courses = () => {
   return (
     <div id="courses">
       <div className="courses-wrapper">
-        <div className="course-container">
+        <div className="course-container" data-aos="zoom-in">
           <h1>Courses</h1>
           <p>
             I have completed several courses in web development, including HTML,

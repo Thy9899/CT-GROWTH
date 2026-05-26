@@ -14,8 +14,11 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       {/* Logo */}
-      <div className="logo">
-        <img src="../../../public/Image/ct_logo.png" alt="CT-Growth" />
+      <div
+        className="logo"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <img src="/public/Image/ct_logo.png" alt="CT-Growth" />
 
         <p>CT GROWTH</p>
       </div>

@@ -12,7 +12,7 @@ const Footer = () => {
         ===================================== */}
         <div className="footer-left">
           <div className="logo-name">
-            <img src="../../../public/Image/ct_logo.png" alt="CT-Growth" />
+            <img src="/public/Image/ct_logo.png" alt="CT-Growth" />
 
             <h1>CT GROWTH</h1>
           </div>
@@ -114,6 +114,8 @@ const Footer = () => {
             Khan Por Senchey,
             <br />
             Phnom Penh, Cambodia
+            <br />
+            (+855) 96 790 2778
           </p>
         </div>
       </div>

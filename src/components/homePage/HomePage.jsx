@@ -5,7 +5,8 @@ const HomePage = () => {
   return (
     <div id="home" className="home-page">
       <div className="home-page-container">
-        <div className="left-container">
+        {/* Left Content */}
+        <div className="left-container" data-aos="fade-left">
           <p className="typing">Welcome!</p>
 
           <h1 className="gradient">CT GROWTH</h1>
@@ -18,7 +19,8 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="right-container">
+        {/* Right Image */}
+        <div className="right-container" data-aos="fade-right">
           <img src="/Image/profile.jpg" alt="home-page" />
         </div>
       </div>
