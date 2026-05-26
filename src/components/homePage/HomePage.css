@@ -1,0 +1,267 @@
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================
+   Background
+========================================= */
+.home-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/Image/CT_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: blur(10px);
+  transform: scale(1.1);
+
+  z-index: -2;
+}
+
+/* dark overlay */
+.home-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: -1;
+}
+
+/* =========================================
+   Main Layout
+========================================= */
+.home-page-container {
+  width: 85%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* =========================================
+   Left Content
+========================================= */
+.left-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: white;
+
+  animation: fadeLeft 1s ease;
+}
+
+/* Welcome */
+.typing {
+  font-size: 2rem;
+  color: #cbd5e1;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  border-right: 2px solid #00f2fe;
+
+  width: 0;
+
+  animation:
+    typing 3s steps(12) forwards,
+    blink 0.8s infinite;
+}
+
+/* Gradient Title */
+.gradient {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+
+  margin: 0;
+
+  background: linear-gradient(
+    90deg,
+    #ff6b6b,
+    #4facfe,
+    #00f2fe,
+    #43e97b,
+    #feca57,
+    #fe00ed
+  );
+
+  background-size: 300% 300%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    gradientMove 8s ease infinite,
+    float 4s ease-in-out infinite;
+}
+
+/* Description */
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.9;
+
+  color: #d1d5db;
+
+  max-width: 700px;
+}
+
+/* =========================================
+   Right Image
+========================================= */
+.right-container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
+  animation: fadeRight 1s ease;
+}
+
+.right-container img {
+  width: 30vw;
+  /* height: 380px; */
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 0 30px rgba(0, 242, 254, 0.4),
+    0 0 80px rgba(168, 85, 247, 0.3);
+
+  transition: 0.4s ease;
+}
+
+.right-container img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* =========================================
+   Animations
+========================================= */
+
+/* typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 140px;
+  }
+}
+
+/* cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* gradient */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* floating title */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* fade animations */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =========================================
+   Responsive
+========================================= */
+@media (max-width: 1400px) {
+  .gradient {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-page-container {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    padding: 120px 0 50px;
+  }
+
+  .left-container {
+    align-items: center;
+  }
+
+  .gradient {
+    font-size: 3.5rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .right-container img {
+    width: 280px;
+    height: 280px;
+  }
+}

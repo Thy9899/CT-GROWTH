@@ -1,0 +1,165 @@
+.courses-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #0f172a, #111827, #1e1b4b);
+
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.course-container {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.course-tag {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.course-container > p {
+  max-width: 800px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 50px;
+}
+
+/* ==========================================
+   Course Slider
+========================================== */
+.course-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10px,
+    black 90%,
+    transparent
+  );
+}
+
+.course-card {
+  display: flex;
+  width: max-content;
+  gap: 25px;
+
+  animation: scroll 30s linear infinite;
+}
+
+.course-card:hover {
+  animation-play-state: paused;
+}
+
+/* ==========================================
+   Card Design
+========================================== */
+.card {
+  width: 320px;
+  min-height: 420px;
+
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: all 0.4s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+}
+
+/* Hover Animation */
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.35);
+
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+/* ==========================================
+   Image
+========================================== */
+.card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+
+  margin: 25px 0;
+
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: rotate(5deg) scale(1.08);
+}
+
+/* ==========================================
+   Text
+========================================== */
+.name-course {
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   Infinite Scroll Animation
+========================================== */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*===========================================
+   Responsive Design
+=========================================== */
+@media (max-width: 768px) {
+  .course-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .course-card {
+    gap: 15px;
+  }
+
+  .card {
+    width: 280px;
+    min-height: 380px;
+  }
+
+  .card img {
+    width: 90px;
+    height: 90px;
+  }
+}
