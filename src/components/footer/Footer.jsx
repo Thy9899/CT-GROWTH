@@ -12,7 +12,7 @@ const Footer = () => {
         ===================================== */}
         <div className="footer-left">
           <div className="logo-name">
-            <img src="/public/ct_logo.png" alt="CT-Growth" />
+            <img src="/ct_logo.PNG" alt="CT-Growth" />
 
             <h1>CT GROWTH</h1>
           </div>

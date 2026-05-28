@@ -73,7 +73,7 @@ const Navigation = () => {
           setActiveMenu("Home");
         }}
       >
-        <img src="/public/ct_logo.png" alt="CT-Growth" />
+        <img src="/ct_logo.PNG" alt="CT-Growth" />
 
         <p>CT GROWTH</p>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Project.css";
-import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -8,7 +7,7 @@ const projects = [
     image: "https://orkes.io/content/img/csharp.png",
     description:
       "A desktop-based product management system developed using C# Windows Forms and SQL Server with features including product inventory, sales management, reporting, and secure user authentication.",
-    path: "/psd-project",
+    path: "/pds-project",
   },
 
   {
@@ -16,6 +15,7 @@ const projects = [
     image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     description:
       "A modern food ordering web application built with React.js, featuring responsive UI design, real-time menu browsing, cart management, and seamless customer experience.",
+    path: "/click2eat-customer",
   },
 
   {
@@ -80,7 +80,7 @@ const Project = () => {
                   <p className="description">{project.description}</p>
 
                   <button className="project-btn">
-                    <Link to={project.path}>View Project</Link>
+                    <a href={project.path}>View Project</a>
                   </button>
                 </div>
               ))}

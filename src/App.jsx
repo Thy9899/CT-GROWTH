@@ -5,8 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Home from "./home/Home";
 import Footer from "./components/footer/Footer";
-import PDS from "./pages/PDS_Project/PDS";
 import Back from "./components/back/Back";
+import PDS from "./pages/PDS_Project/PDS";
+import C2E_Customer from "./pages/C2E_Customer/C2E_Customer";
 
 function App() {
   // Initialize AOS (Animate On Scroll) library
@@ -32,11 +33,22 @@ function App() {
 
       {/* Project Detail Page */}
       <Route
-        path="/psd-project"
+        path="/pds-project"
         element={
           <>
             <Back />
             <PDS />
+            <Footer />
+          </>
+        }
+      />
+
+      <Route
+        path="/click2eat-customer"
+        element={
+          <>
+            <Back />
+            <C2E_Customer />
             <Footer />
           </>
         }

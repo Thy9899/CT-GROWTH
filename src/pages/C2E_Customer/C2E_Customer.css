@@ -1,0 +1,7 @@
+.c2e-customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
