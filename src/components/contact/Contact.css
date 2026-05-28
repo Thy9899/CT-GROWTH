@@ -114,6 +114,8 @@
   flex: 1;
 
   animation: fadeRight 1s ease;
+
+  width: 100%;
 }
 
 .contact-form {

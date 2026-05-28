@@ -3,7 +3,7 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div id="home" className="home-page">
+    <section id="home" className="home-page">
       <div className="home-page-container">
         {/* Left Content */}
         <div className="left-container" data-aos="fade-left">
@@ -24,7 +24,7 @@ const HomePage = () => {
           <img src="/Image/profile.jpg" alt="home-page" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

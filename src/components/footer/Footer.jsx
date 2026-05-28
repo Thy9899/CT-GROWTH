@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../../assets/ct_logo.png";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
         ===================================== */}
         <div className="footer-left">
           <div className="logo-name">
-            <img src="/Image/ct_logo.png" alt="CT-Growth" />
+            <img src={logo} alt="CT-Growth" />
 
             <h1>CT GROWTH</h1>
           </div>
@@ -113,7 +114,7 @@ const Footer = () => {
             <br />
             Khan Por Senchey,
             <br />
-            Phnom Penh, Cambodia
+            Phnom Penh, Cambodia.
             <br />
             (+855) 96 790 2778
           </p>

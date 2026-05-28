@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import logo from "../../assets/ct_logo.png";
 
 const Navigation = () => {
   const [activeMenu, setActiveMenu] = useState("Home");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const menuItems = [
     { name: "Home", path: "home" },
-    { name: "Courses", path: "courses" },
-    { name: "About Me", path: "about" },
+    { name: "Project", path: "project" },
+    { name: "About", path: "about" },
     { name: "Contact", path: "contact" },
   ];
 
   /* =====================================
-     Detect Current Section On Scroll
+      Detect Current Section On Scroll
   ===================================== */
   useEffect(() => {
     const sections = document.querySelectorAll("section, div[id]");
@@ -49,39 +52,63 @@ const Navigation = () => {
     };
   }, []);
 
+  /* =====================================
+      Close Menu After Click
+  ===================================== */
+  const handleMenuClick = (menuName) => {
+    setActiveMenu(menuName);
+    setMenuOpen(false);
+  };
+
   return (
-    <nav className="navigation">
+    <nav className={`navigation ${scrolled ? "scrolled" : ""}`}>
       {/* Logo */}
       <div
         className="logo"
-        onClick={() =>
+        onClick={() => {
           window.scrollTo({
             top: 0,
             behavior: "smooth",
-          })
-        }
+          });
+
+          setActiveMenu("Home");
+        }}
       >
-        <img src="/Image/ct_logo.png" alt="CT-Growth" />
+        <img src={logo} alt="CT-Growth" />
 
         <p>CT GROWTH</p>
       </div>
 
-      {/* Nav Links */}
-      <ul className="nav-links">
+      {/* Mobile Toggle */}
+      <div
+        className={`nav-menu-icon ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Navigation Links */}
+      <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
         {menuItems.map((item) => (
           <li key={item.name}>
             <a
               href={`#${item.path}`}
               className={activeMenu === item.name ? "active" : ""}
+              onClick={() => handleMenuClick(item.name)}
             >
               {item.name}
             </a>
           </li>
         ))}
+
+        {/* Mobile Button */}
+        <button className="nav-btn mobile-btn">Hire Me</button>
       </ul>
 
-      {/* Button */}
-      <button className="nav-btn">Hire Me</button>
+      {/* Desktop Button */}
+      <button className="nav-btn desktop-btn">Hire Me</button>
     </nav>
   );
 };

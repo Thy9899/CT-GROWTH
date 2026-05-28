@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container" data-aos="fade-up">
         {/* Left Image */}
         <div className="about-image">
-          <img src="/Image/profile.jpg" alt="About Me" />
+          <img src="/Image/profile.jpg" alt="profile" />
         </div>
 
         {/* Right Content */}

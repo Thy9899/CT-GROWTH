@@ -41,7 +41,7 @@
    Main Layout
 ========================================= */
 .home-page-container {
-  width: 85%;
+  width: 80%;
   margin: auto;
 
   display: flex;
@@ -263,5 +263,12 @@
   .right-container img {
     width: 280px;
     height: 280px;
+    object-position: top;
+  }
+}
+
+@media (max-width: 428px) {
+  .gradient {
+    font-size: 3rem;
   }
 }

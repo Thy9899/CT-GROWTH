@@ -1,0 +1,261 @@
+.project-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #020617, #111827, #1e1b4b);
+
+  padding: 120px 0;
+
+  overflow: hidden;
+}
+
+.project-container {
+  width: 80%;
+  margin: auto;
+
+  color: white;
+}
+
+/* ==========================================
+   Header
+========================================== */
+.project-tag {
+  color: #00f2fe;
+
+  letter-spacing: 3px;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 4rem;
+
+  margin-bottom: 25px;
+}
+
+.project-title span {
+  background: linear-gradient(90deg, #00f2fe, #a855f7);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-intro {
+  max-width: 850px;
+
+  color: #cbd5e1;
+
+  line-height: 1.9;
+
+  margin-bottom: 60px;
+
+  font-size: 1.1rem;
+}
+
+/* ==========================================
+   Slider
+========================================== */
+.project-slider {
+  overflow: hidden;
+
+  width: 100%;
+
+  padding: 40px;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.project-card {
+  display: flex;
+
+  gap: 30px;
+
+  width: max-content;
+
+  animation: scroll 40s linear infinite;
+}
+
+.project-card:hover {
+  animation-play-state: paused;
+}
+
+/* ==========================================
+   Card
+========================================== */
+.card {
+  width: 340px;
+  min-height: 500px;
+
+  padding: 30px;
+
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 0 20px rgba(168, 85, 247, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.4s ease;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+
+  border-color: rgba(168, 85, 247, 0.4);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 0 35px rgba(168, 85, 247, 0.2);
+}
+
+/* ==========================================
+   Top
+========================================== */
+.card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 110px;
+  height: 110px;
+
+  object-fit: contain;
+
+  margin-bottom: 25px;
+
+  transition: 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08) rotate(5deg);
+}
+
+/* ==========================================
+   Text
+========================================== */
+.name-project {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #cbd5e1;
+
+  line-height: 1.8;
+
+  text-align: center;
+
+  font-size: 1rem;
+
+  margin-bottom: 30px;
+}
+
+/* ==========================================
+   Button
+========================================== */
+.project-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(90deg, #00f2fe, #a855f7);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+.project-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.35);
+}
+
+/* ==========================================
+   Animation
+========================================== */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+@media (max-width: 992px) {
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 300px;
+    min-height: 470px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-intro {
+    margin: auto auto 50px;
+  }
+
+  .card {
+    width: 280px;
+  }
+
+  .card img {
+    width: 90px;
+    height: 90px;
+  }
+}
