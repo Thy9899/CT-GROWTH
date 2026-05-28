@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/ct_logo.png";
 
 const Navigation = () => {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -74,7 +73,7 @@ const Navigation = () => {
           setActiveMenu("Home");
         }}
       >
-        <img src={logo} alt="CT-Growth" />
+        <img src="/public/ct_logo.png" alt="CT-Growth" />
 
         <p>CT GROWTH</p>
       </div>

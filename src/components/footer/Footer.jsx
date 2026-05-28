@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/ct_logo.png";
 
 const Footer = () => {
   return (
@@ -13,7 +12,7 @@ const Footer = () => {
         ===================================== */}
         <div className="footer-left">
           <div className="logo-name">
-            <img src={logo} alt="CT-Growth" />
+            <img src="/public/ct_logo.png" alt="CT-Growth" />
 
             <h1>CT GROWTH</h1>
           </div>
