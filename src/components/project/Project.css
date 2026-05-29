@@ -259,3 +259,32 @@
     height: 90px;
   }
 }
+
+@media (max-width: 428px) {
+  .description {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3; /* Number of lines */
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .name-project {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    width: 260px;
+
+    min-height: 350px;
+
+    padding: 20px;
+  }
+
+  .project-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

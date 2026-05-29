@@ -1,5 +1,5 @@
 import React from "react";
-import "./PDS.css";
+import "../Project_Detail.css";
 
 const PDS = () => {
   return (
@@ -30,20 +30,26 @@ const PDS = () => {
           />
 
           <div className="project-gallery">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-              alt="Gallery"
-            />
+            <div className="gallery">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                alt="Gallery"
+              />
+            </div>
 
-            <img
-              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
-              alt="Gallery"
-            />
+            <div className="gallery">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+                alt="Gallery"
+              />
+            </div>
 
-            <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-              alt="Gallery"
-            />
+            <div className="gallery">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                alt="Gallery"
+              />
+            </div>
           </div>
         </div>
 

@@ -23,6 +23,7 @@ const projects = [
     image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     description:
       "An admin dashboard system developed using React.js for managing restaurants, food categories, customer orders, analytics, and operational workflows.",
+    path: "/click2eat-admin",
   },
 
   {
@@ -30,6 +31,7 @@ const projects = [
     image: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
     description:
       "A RESTful backend API built with Node.js and Express.js, supporting authentication, order management, database integration, and secure communication between frontend and server.",
+    path: "/click2eat-api",
   },
 
   {
@@ -37,6 +39,7 @@ const projects = [
     image: "https://cdn-icons-png.flaticon.com/512/2317/2317069.png",
     description:
       "A cross-platform mobile application created using Flutter, designed with responsive layouts, modern UI components, and optimized mobile performance.",
+    path: "/sms-mobile",
   },
 
   {
@@ -45,6 +48,7 @@ const projects = [
       "https://th.bing.com/th/id/R.4c4b4a9bb2d54db883702f949dc6fbe1?rik=vatoAfWE2P28%2fg&pid=ImgRaw&r=0",
     description:
       "A full-stack student management platform developed using ASP.NET Core Web API and SQL Server for handling student records, authentication, attendance, and reporting.",
+    path: "/sms-backend",
   },
 ];
 

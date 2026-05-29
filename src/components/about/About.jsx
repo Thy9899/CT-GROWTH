@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Contact from "../contact/Contact";
 
 const About = () => {
   return (
@@ -44,9 +45,26 @@ const About = () => {
 
           {/* Buttons */}
           <div className="about-buttons">
-            <button className="btn-primary">Download CV</button>
+            <button
+              className="btn-primary"
+              onClick={() => {
+                window.open("/File/KEAN_CHANTHY.pdf", "_blank");
+              }}
+            >
+              Download CV
+            </button>
 
-            <button className="btn-outline">Contact Me</button>
+            <button
+              className="btn-outline"
+              onClick={() => {
+                window.scrollTo({
+                  top: document.getElementById("contact").offsetTop,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Contact Me
+            </button>
           </div>
         </div>
       </div>

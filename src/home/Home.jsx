@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "../components/navigation/Navbar";
 import HomePage from "../components/homePage/HomePage";
 import Project from "../components/project/Project";
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <Navbar />
+
       <HomePage />
       <Project />
       <About />
