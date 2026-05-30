@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ct-growth.vercel.app/sitemap.xml
