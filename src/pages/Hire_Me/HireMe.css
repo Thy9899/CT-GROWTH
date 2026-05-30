@@ -1,0 +1,309 @@
+.hire-me {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #111827, #1e1b4b);
+  color: white;
+}
+
+/* ==========================
+   Hero
+========================== */
+.hire-hero {
+  text-align: center;
+  padding: 180px 20px 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.hire-tag {
+  color: #00f2fe;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.hire-hero h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.hire-hero span {
+  background: linear-gradient(90deg, #00f2fe, #a855f7);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hire-intro {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.9;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+/* ==========================
+   Integrated Contact Box 
+========================== */
+.hire-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+  width: 100%;
+}
+
+.hire-contact-box {
+  border: 2px solid #a855f7;
+  border-radius: 24px;
+  padding: 35px 50px;
+  width: 100%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hire-contact-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0 15px;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+}
+
+.icon-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-item:hover {
+  transform: translateY(-6px);
+}
+
+.icon-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icon-label {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  letter-spacing: 0.02em;
+}
+
+.hire-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 15px;
+
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #00f2fe, #a855f7);
+
+  transition: 0.4s;
+}
+
+.hire-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* ==========================
+   Sections
+========================== */
+.hire-section {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.hire-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+/* ==========================
+   Services
+========================== */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.4s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ==========================
+   Why Me
+========================== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.why-grid div {
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================
+   Tech Stack Badges
+========================== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills span {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.skills span:hover {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: #a855f7;
+  color: #ffffff;
+}
+
+/* ==========================
+   Availability
+========================== */
+.availability {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.available {
+  padding: 25px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================
+   Process
+========================== */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.process-card {
+  text-align: center;
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.process-card h3 {
+  font-size: 3rem;
+  color: #00f2fe;
+}
+
+/* ==========================
+   CTA
+========================== */
+.hire-cta {
+  text-align: center;
+
+  padding: 120px 20px;
+
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hire-cta h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hire-cta p {
+  max-width: 700px;
+  margin: auto;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ==========================
+   Mobile
+========================== */
+@media (max-width: 768px) {
+  .hire-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hire-section,
+  .hire-hero {
+    width: 80%;
+  }
+
+  .contact-box {
+    padding: 12px 20px;
+  }
+
+  .icon-group {
+    gap: 24px;
+  }
+
+  .icon-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hire-cta h2 {
+    font-size: 2rem;
+  }
+}

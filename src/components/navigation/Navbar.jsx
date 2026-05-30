@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const [activeMenu, setActiveMenu] = useState("Home");
@@ -59,6 +61,8 @@ const Navigation = () => {
     setMenuOpen(false);
   };
 
+  const navigate = useNavigate();
+
   return (
     <nav className={`navigation ${scrolled ? "scrolled" : ""}`}>
       {/* Logo */}
@@ -103,11 +107,21 @@ const Navigation = () => {
         ))}
 
         {/* Mobile Button */}
-        <button className="nav-btn mobile-btn">Hire Me</button>
+        <button
+          className="nav-btn mobile-btn"
+          onClick={() => navigate("/hire-me")}
+        >
+          Hire Me
+        </button>
       </ul>
 
       {/* Desktop Button */}
-      <button className="nav-btn desktop-btn">Hire Me</button>
+      <button
+        className="nav-btn desktop-btn"
+        onClick={() => navigate("/hire-me")}
+      >
+        Hire Me
+      </button>
     </nav>
   );
 };

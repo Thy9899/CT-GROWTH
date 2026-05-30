@@ -235,6 +235,14 @@
   background: linear-gradient(90deg, #00f2fe, #a855f7);
 }
 
+/* The magic happens for the live button */
+.live-btn:disabled {
+  background-color: #d3d3d3; /* Turns grey */
+  color: #888888; /* Dulls the text color */
+  cursor: not-allowed; /* Shows a "no entry" sign on hover */
+  opacity: 0.6; /* Makes it look faded */
+}
+
 .github-btn {
   background: rgba(255, 255, 255, 0.08);
 

@@ -16,6 +16,8 @@ import C2E_Backend from "./pages/C2E_Backend/C2E_Backend";
 import SMS_App from "./pages/Mobile/SMS_App";
 import SMS_Backend from "./pages//Mobile/SMS_Backend";
 
+import HireMe from "./pages/Hire_Me/HireMe";
+
 function App() {
   // Initialize AOS (Animate On Scroll) library
   useEffect(() => {
@@ -100,6 +102,17 @@ function App() {
           <>
             <Back />
             <SMS_Backend />
+            <Footer />
+          </>
+        }
+      />
+
+      <Route
+        path="/hire-me"
+        element={
+          <>
+            <Back />
+            <HireMe />
             <Footer />
           </>
         }

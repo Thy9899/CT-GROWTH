@@ -24,31 +24,19 @@ const PDS = () => {
       <div className="project-detail-container">
         {/* Left */}
         <div className="project-left">
-          <img
-            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
-            alt="Project Preview"
-          />
+          <img src="/WindowForm/stock.png" alt="Project Preview" />
 
           <div className="project-gallery">
             <div className="gallery">
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-                alt="Gallery"
-              />
+              <img src="/WindowForm/report.png" alt="Gallery" />
             </div>
 
             <div className="gallery">
-              <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
-                alt="Gallery"
-              />
+              <img src="/WindowForm/product.png" alt="Gallery" />
             </div>
 
             <div className="gallery">
-              <img
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-                alt="Gallery"
-              />
+              <img src="/WindowForm/profile.png" alt="Gallery" />
             </div>
           </div>
         </div>
@@ -92,7 +80,9 @@ const PDS = () => {
           </div>
 
           <div className="project-buttons">
-            <button className="live-btn">Live Demo</button>
+            <button className="live-btn" disabled>
+              Live Demo
+            </button>
 
             <button className="github-btn">GitHub Repository</button>
           </div>

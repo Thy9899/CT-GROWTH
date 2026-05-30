@@ -151,7 +151,7 @@
   color: white;
   text-decoration: none;
 
-  font-weight: 700;
+  font-weight: bold;
 
   transition: 0.4s ease;
 }
@@ -160,6 +160,8 @@
   transform: translateY(-5px);
 
   box-shadow: 0 12px 30px rgba(168, 85, 247, 0.4);
+
+  cursor: pointer;
 }
 
 /* =====================================

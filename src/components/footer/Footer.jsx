@@ -68,11 +68,37 @@ const Footer = () => {
                 alt="LinkedIn"
               />
             </a>
+
+            <a
+              href="https://github.com/Thy9899"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://images.icon-icons.com/936/PNG/512/github-logo_icon-icons.com_73546.png"
+                alt="GitHub"
+                style={{
+                  // color: "white",
+                  background: "white",
+                  borderRadius: "50%",
+                }}
+              />
+            </a>
           </div>
 
-          <a href="#home" className="top-btn">
+          <div
+            className="top-btn"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+
+              setActiveMenu("Home");
+            }}
+          >
             Back To Top ↑
-          </a>
+          </div>
         </div>
 
         {/* =====================================
@@ -87,7 +113,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href="#courses">Courses</a>
+              <a href="#project">Project</a>
             </li>
 
             <li>
